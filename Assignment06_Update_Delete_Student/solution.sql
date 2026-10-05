@@ -11,15 +11,7 @@ CREATE TABLE Student(
     Email VARCHAR(30),
     PhoneNumber BIGINT
 );
-
-INSERT INTO Student(StudentID,StudentName,Gender,DepartmentID)
-VALUES
-(1001,'Arun','Male',101),
-(1002,'Divya','Female',102),
-(1003,'Karthik','Male',101);
-
--- Update Karthik's DepartmentID
-
--- Delete StudentID 1002
-
--- Display all records
+use college;
+UPDATE std6 SET departmentID=103 WHERE 
+studentName="Karthik";
+delete from std6 WHERE studentID=1002;
